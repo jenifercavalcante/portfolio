@@ -11,8 +11,10 @@ body {
   font-family: "Fira Code", monospace;
 
   margin: 0;
+  padding: 0;
   background-color: #000;
   overflow: hidden;
+  line-height: 1.5;
 
   .star {
     position: absolute;
