@@ -1,11 +1,17 @@
-import Home from './pages/Home/Home';
-import {Routes, Route} from 'react-router-dom'
+import Stars from "./components/stars/Stars";
+import Home from "./pages/Home/Home";
+import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <Routes>
+    <div>
+      <Stars />
+      <div className="over-comet"></div>
+
+      <Routes>
         <Route path="/" element={<Home />} />
-    </Routes>
+      </Routes>
+    </div>
   );
 }
 
