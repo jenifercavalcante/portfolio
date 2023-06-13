@@ -19,5 +19,23 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    flex-direction: column;
+
+    .subtitle {
+      font-family: "Andale Mono", AndaleMono, monospace;
+
+      font-style: normal;
+      font-weight: 400;
+      font-size: 5rem;
+      word-spacing: -1.5rem;
+      line-height: 5rem;
+
+      align-self: baseline;
+    }
+
+    .description {
+      text-align: justify;
+    }
   }
 }
