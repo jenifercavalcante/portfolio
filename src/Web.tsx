@@ -1,17 +1,24 @@
+import Navbar from "./components/navbar/Navbar";
 import Stars from "./components/stars/Stars";
 import Home from "./pages/Home/Home";
 import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div>
-      <Stars />
-      <div className="over-comet"></div>
+    <>
+      <header>
+        <Navbar />
+      </header>
 
-      <Routes>
-        <Route path="/" element={<Home />} />
-      </Routes>
-    </div>
+      <main>
+        <Stars />
+        <div className="over-comet"></div>
+
+        <Routes>
+          <Route path="/" element={<Home />} />
+        </Routes>
+      </main>
+    </>
   );
 }
 
